@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Product Card UI design</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+</head>
+
+<body>
+  <div class="product">
+    <div class="imgbox">
+      <img src="product.jpg" alt="product">
+    </div>
+    <div class="specifice">
+      <h2>Brand<br><span>WTS</span></h2>
+      <div class="price">$100</div>
+
+      <label>Size</label>
+      <ul class="sizes">
+        <li class="active">20mm</li>
+        <li>25mm</li>
+        <li>30mm</li>
+        <li>35mm</li>
+        <li>40mm</li>
+      </ul>
+      <label>Colors</label>
+      <ul class="colors">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <a href="#">Buy it now</a>
+    </div>
+  </div>
+</body>
+<script>
+  $(".sizes li").click(function () {
+    $(".sizes li").removeClass('active');
+    $(this).addClass('active');
+  });
+  $(".colors li").click(function () {
+    $(".colors li").removeClass('active');
+    $(this).addClass('active');
+  });
+</script>
+
+</html>
